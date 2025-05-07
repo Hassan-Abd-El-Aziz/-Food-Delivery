@@ -17,9 +17,22 @@
   font-family: "Open Sans", sans-serif;
 }
 
-body{
-    width: 100%;
-    height: auto;
-    display: flex;
-    
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+/* sideBar Style*/
+.sidebar {
+  height: 100%;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
 }
