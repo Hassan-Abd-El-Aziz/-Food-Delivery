@@ -36,3 +36,32 @@ body {
   background-color: var(--primaryColor);
   color: var(--whiteColor);
 }
+
+/* sidebar menus */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu a,
+.sidebar-logout a {
+  padding: 5% 8%;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--whiteColor);
+}
+
+.sidebar-menu a ion-icon,
+.sidebar-logout a ion-icon {
+  font-size: 20px;
+}
+.sidebar-menu a:hover,
+.sidebar-logout a:hover {
+  background-color: var(--secondaryColor);
+  border-radius: 50px;
+  color: var(--blackColor);
+}
