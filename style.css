@@ -279,3 +279,67 @@ body {
   background-color: var(--primaryColor);
   border: none;
 }
+
+.main-detail {
+  margin: 1rem 0 1.5rem 0;
+}
+.detail-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  margin-top: 1rem;
+  gap: 2%;
+  border-radius: 8px;
+}
+.detail-card {
+  min-height: 280px;
+  height: 100%;
+  background-color: var(--whiteColor);
+  border-radius: 8px;
+  margin: 1% 0;
+  box-shadow: rgba(176, 176, 176, 0.3) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.detail-card:hover {
+  box-shadow: rgba(140, 157, 165, 0.3) 0px 8px 24px;
+}
+.detail-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.7);
+}
+.detail-card:hover .detail-img {
+  filter: opacity(1);
+}
+.detail-card:hover .detail-name h4 {
+  color: var(--primaryColor);
+}
+
+.detail-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3%;
+  width: 100%;
+}
+.detail-sup {
+  font-size: 12px;
+  color: var(--darkGrayColor);
+  letter-spacing: 0.5;
+  margin: 1% 0;
+}
+
+.price {
+  color: var(--primaryColor);
+}
+.detail-favorites {
+  font-size: 24px;
+}
+
+.detail-card:hover .price {
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
